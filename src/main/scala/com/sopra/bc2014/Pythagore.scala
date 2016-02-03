@@ -1,7 +1,7 @@
 package com.sopra.bc2014
 
 import scalaxy.streams.optimize
-import scalaxy.streams.strategy.aggressive
+import scalaxy.streams.strategy.safe
 
 object Pythagore {
 
