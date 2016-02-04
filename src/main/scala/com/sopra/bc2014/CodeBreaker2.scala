@@ -34,7 +34,7 @@ object CodeBreaker2 {
   class Decoder(val key: Array[Int], val repeatedKey: Array[Int], val ciphered: Array[Int]) {
 
     def this(cipheredChars: Array[Int], key: Array[Int]) {
-      this(key, cipheredChars.toArray, repeatKey(key, cipheredChars.length))
+      this(key, repeatKey(key, cipheredChars.length), cipheredChars.toArray)
     }
 
     def this(ciphered: String, key: Array[Int]) {
